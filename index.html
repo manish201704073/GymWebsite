@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maniraj fitness</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+    <style>
+        /* css reset */
+        body { 
+            font-family: 'Baloo Bhai 2', cursive;
+            color: black;
+            margin: 0px;
+            padding:0px;
+            background: url('img/bg.jpg') center center/cover;
+            background-repeat: no-repeat;
+            /* height: 100%;
+            width: 100%; */
+
+        }
+        #photo{
+            height: 100%;
+            width: 100%;
+        }
+
+        .left {
+            position: absolute;
+            left: 21px;
+            top: 18px;
+            display: inline-block;
+            line-height: 25px;
+            font-size: 16px;
+            /* border: 2px solid red; */
+        }
+
+        .left img {
+            width: 38px;
+            text-align: center;
+            margin: auto;
+            display: block;
+        }
+
+        .mid {
+            display: block;
+            width: 40%;
+            margin: 14px auto;
+            /* border: 2px solid black; */
+        }
+
+        .right {
+            position: absolute;
+            right: 21px;
+            top: 18px;
+            display: inline-block;
+            /* border: 2px solid green; */
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+
+            display: inline-block;
+            font-size: 18px;
+        }
+
+        .navbar li a {
+            color: black;
+            text-decoration: none;
+            padding: 34px 10px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: blue;
+        }
+
+        .btn {
+            font-family: 'Baloo Bhai 2', cursive;
+            margin: 6px 9px;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            padding: 3px 12px;
+            border-radius: 10px;
+            font-size: 18px;
+            cursor: pointer;
+
+        }
+
+        .btn:hover {
+            background-color: rgb(44, 43, 43);
+        }
+
+        .container {
+            border: 2px solid rgb(0, 0, 0);
+            margin: 30px 850px;
+            padding: 3px 27px;
+            width: 20%;
+            /* display: block; */
+            border-radius: 5px;
+
+        }
+
+        .form-group input {
+            font-family: 'Baloo Bhai 2', cursive;
+            text-align: center;
+            display: block;
+            margin: 11px auto;
+            padding: 1px;
+            width: 250px;
+            border: 2px solid rgb(0, 0, 0);
+            font-size: 14px;
+            border-radius: 7px;
+
+        }
+
+        .container h1 {
+            text-align: center;
+            line-height: 35px;
+        }
+
+        .container button {
+            display: block;
+            width: 250px;
+            margin: 13px auto;
+            padding: 2px 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="./img/logo.jpg" alt="" >
+            <div>Maniraj Fitness</div>
+        </div>
+
+        <!-- mid box for navigation  -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Calculater</a></li>
+                <li><a href="#"> Contact us</a></li>
+            </ul>
+        </div>
+
+        <!-- right box for buttons  -->
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn"> Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of noida now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+                <input type="text" name="" placeholder="Enter your Age">
+                <input type="text" name="" placeholder="Enter your Gender">
+                <input type="text" name="" placeholder="Enter your locality">
+                <input type="text" name="" placeholder="Enter your phone number">
+                <input type="text" name="" placeholder="Enter your Email id">
+                <button class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
